@@ -12,9 +12,17 @@ class TodoListViewController: UITableViewController {
 
     var itemArray = ["Buy Eggs", "Pay Credit Cards", "Copy music for student"]
     
+    let defaults = UserDefaults.standard  //this "default" saves data into device memory
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //this statement loads saved data from device memory.
+        //the "let item" part catches possible error, such as file not exist yet
+        if let items = defaults.array(forKey: "ToDoListArray") as? [String] {
+            itemArray = items
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,6 +69,9 @@ class TodoListViewController: UITableViewController {
             print("Success! \(textField.text!)")
             
             self.itemArray.append(textField.text!)
+            //save data
+            self.defaults.set(self.itemArray, forKey: "ToDoListArray")
+            
             self.tableView.reloadData()
         }
         alert.addTextField { (alertTextField) in
