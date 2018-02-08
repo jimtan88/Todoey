@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB2CEB27201E0F4800A52434 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2CEB26201E0F4800A52434 /* Item.swift */; };
 		AB3F7C76200CAC1200A2F415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F7C75200CAC1200A2F415 /* AppDelegate.swift */; };
 		AB3F7C78200CAC1200A2F415 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F7C77200CAC1200A2F415 /* TodoListViewController.swift */; };
 		AB3F7C7B200CAC1200A2F415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3F7C79200CAC1200A2F415 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB2CEB26201E0F4800A52434 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		AB3F7C72200CAC1200A2F415 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3F7C75200CAC1200A2F415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB3F7C77200CAC1200A2F415 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				AB3F7C75200CAC1200A2F415 /* AppDelegate.swift */,
 				AB3F7C77200CAC1200A2F415 /* TodoListViewController.swift */,
 				AB3F7C79200CAC1200A2F415 /* Main.storyboard */,
+				AB2CEB26201E0F4800A52434 /* Item.swift */,
 				AB3F7C7C200CAC1200A2F415 /* Assets.xcassets */,
 				AB3F7C7E200CAC1200A2F415 /* LaunchScreen.storyboard */,
 				AB3F7C81200CAC1200A2F415 /* Info.plist */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB3F7C78200CAC1200A2F415 /* TodoListViewController.swift in Sources */,
+				AB2CEB27201E0F4800A52434 /* Item.swift in Sources */,
 				AB3F7C76200CAC1200A2F415 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
